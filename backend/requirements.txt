@@ -1,0 +1,28 @@
+## Skyrchitect AI Backend Requirements
+
+# Core Framework
+fastapi>=0.115.6  # Updated to support starlette>=0.46.2
+uvicorn[standard]>=0.34.2
+pydantic>=2.12.0
+pydantic-settings>=2.6.1
+
+# AWS & AI
+boto3==1.40.50
+strands-agents==1.12.0
+strands-agents-tools==0.2.11
+
+# AWS Bedrock AgentCore Primitives (HACKATHON REQUIREMENT)
+bedrock-agentcore==0.1.7
+
+# Utilities
+python-dotenv==1.0.1
+python-multipart==0.0.12
+
+# Image Processing & Analysis
+Pillow==11.3.0
+pdf2image==1.16.3
+PyPDF2==3.0.1
+
+# Optional for production
+# gunicorn==21.2.0  # For production deployment
+# mangum==0.17.0    # For AWS Lambda deployment
